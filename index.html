@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алексей Ханипов — Технический специалист GetCourse и интегратор автоматизации</title>
+    <meta name="description" content="Настройка GetCourse, платежных модулей, сквозной аналитики, CRM и AI-автоматизации для онлайн-школ и EdTech-проектов.">
+    
+    <!-- OpenGraph для красивого превью в Telegram и VK -->
+    <meta property="og:title" content="Алексей Ханипов — Технический специалист GetCourse и интегратор">
+    <meta property="og:description" content="Настраиваю стабильную техническую инфраструктуру онлайн-школ: GetCourse, платежи, CRM, Telegram-боты и AI-инструменты.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://alex-hash986.github.io/Photo_Resum.png">
+
+    <!-- Шрифт Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-brand-600 selection:text-white">
+
+    <!-- Навигация -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg tracking-tight text-slate-900">
+                Алексей Ханипов
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#services" class="hover:text-brand-600 transition">Компетенции</a>
+                <a href="#experience" class="hover:text-brand-600 transition">Опыт и обучение</a>
+                <a href="#cases" class="hover:text-brand-600 transition">Кейсы</a>
+                <a href="#formats" class="hover:text-brand-600 transition">Форматы работы</a>
+            </nav>
+            <a href="https://vk.ru/club236094237" target="_blank" class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-brand-600 rounded-lg hover:bg-brand-700 transition shadow-sm">
+                Связаться в ВК
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Первый экран (Hero) -->
+        <section class="py-16 sm:py-24 bg-white border-b border-slate-200">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6">
+                <div class="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-12">
+                    <div class="flex-1 text-center md:text-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs font-semibold mb-6">
+                            <span class="w-2 h-2 rounded-full bg-brand-600"></span>
+                            EdTech • GetCourse • Автоматизация
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-6">
+                            Технический специалист GetCourse и интегратор бизнес-процессов
+                        </h1>
+                        <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8 max-w-2xl">
+                            Помогаю онлайн-школам и образовательным проектам выстраивать надежную техническую архитектуру: от настройки воронок и платежных систем до интеграции GetCourse с CRM, Telegram-ботами и AI-агентами.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                            <a href="https://vk.ru/club236094237" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 text-base font-medium text-white bg-brand-600 rounded-xl hover:bg-brand-700 transition shadow-sm">
+                                Обсудить задачу в ВКонтакте
+                            </a>
+                            <a href="mailto:investleon@yandex.ru" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 text-base font-medium text-slate-700 bg-slate-100 rounded-xl hover:bg-slate-200 transition">
+                                Написать на почту
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Фото эксперта -->
+                    <div class="w-48 h-48 sm:w-60 sm:h-60 shrink-0">
+                        <img src="Photo_Resum.png" 
+                             alt="Алексей Ханипов — технический специалист GetCourse" 
+                             class="w-full h-full object-cover object-top rounded-2xl shadow-md border border-slate-200 bg-slate-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Компетенции -->
+        <section id="services" class="py-16 sm:py-20">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6">
+                <div class="mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Ключевые компетенции и стек</h2>
+                    <p class="text-slate-600">Закрываю как базовые задачи по архитектуре школы, так и нестандартные интеграции через API и вебхуки.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Карточка 1 -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-4">01</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Архитектура и процессы в GetCourse</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Сборка курсов и тренингов с гибкой логикой выдачи уроков, настройка автоматических процессов, сегментация базы, триггерные рассылки и управление доступами.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600">
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">Процессы</span>
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">Тренинги</span>
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">Сегментация</span>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-4">02</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Платежные модули и аналитика</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Подключение и тестирование эквайринга, рассрочек и рекуррентных платежей. Настройка передачи UTM-меток и сквозной аналитики для контроля окупаемости трафика.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600">
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">Продамус / ЮKassa / Т-Банк</span>
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">UTM-метки</span>
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">Рекурренты</span>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-4">03</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">CRM-интеграции и вебхуки</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Двусторонняя синхронизация заказов и статусов между GetCourse, Bitrix24, amoCRM и Google Таблицами без потери заявок и дублей карточек клиентов.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600">
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">Bitrix24</span>
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">n8n / Make</span>
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">REST API / Webhooks</span>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-4">04</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Telegram-боты и AI-автоматизация</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Разработка ботов для автоворонок, уведомлений отдела продаж и выдачи доступов. Внедрение LLM-инструментов для первичной квалификации лидов и автоматизации рутины.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600">
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">Telegram API</span>
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">Python / FastAPI</span>
+                            <span class="px-2.5 py-1 bg-slate-100 rounded-md">LLM / AI-агенты</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Опыт и образование -->
+        <section id="experience" class="py-16 sm:py-20 bg-white border-t border-slate-200">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6">
+                <div class="mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Опыт и профильная подготовка</h2>
+                    <p class="text-slate-600">Системная база работы с платформой GetCourse, подкрепленная практикой в действующем EdTech-проекте.</p>
+                </div>
+
+                <div class="relative border-l-2 border-slate-200 ml-3 sm:ml-4 space-y-10">
+                    <!-- Этап 1: Текущая практика -->
+                    <div class="relative pl-8">
+                        <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-600 ring-4 ring-white"></span>
+                        <span class="inline-block text-xs font-semibold text-brand-600 bg-brand-50 px-2.5 py-0.5 rounded-md mb-2">
+                            2026 — настоящее время
+                        </span>
+                        <h3 class="text-lg font-bold text-slate-900">Частная практика (Фриланс) • ИП (НПД)</h3>
+                        <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                            Техническое сопровождение онлайн-проектов, настройка архитектуры GetCourse, интеграция CRM-систем (Bitrix24), разработка кастомных Telegram-ботов и автоматизация бизнес-процессов на базе вебхуков и AI-инструментов.
+                        </p>
+                    </div>
+
+                    <!-- Этап 2: Стажировка -->
+                    <div class="relative pl-8">
+                        <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 ring-4 ring-white"></span>
+                        <span class="inline-block text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-0.5 rounded-md mb-2">
+                            Практика в действующем проекте
+                        </span>
+                        <h3 class="text-lg font-bold text-slate-900">Стажировка в онлайн-школе «Академия маркетинга» (проект Андрианова)</h3>
+                        <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                            Работа внутри боевого аккаунта действующей онлайн-школы: администрирование процессов, настройка доступов к обучающим модулям, контроль корректности воронок продаж, рассылок и работы технической поддержки.
+                        </p>
+                    </div>
+
+                    <!-- Этап 3: Образование -->
+                    <div class="relative pl-8">
+                        <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 ring-4 ring-white"></span>
+                        <span class="inline-block text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-0.5 rounded-md mb-2">
+                            Ноябрь 2025 — Апрель 2026
+                        </span>
+                        <h3 class="text-lg font-bold text-slate-900">Профессиональная переподготовка: курс Ксении Нечепуренко «Технический специалист GetCourse»</h3>
+                        <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                            Углубленное изучение архитектуры платформы: сборка тренингов, сложные процессы и сегментация, подключение платежных модулей и касс, настройка вебинаров, аналитики и интеграций со сторонними сервисами.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кейсы -->
+        <section id="cases" class="py-16 sm:py-20 bg-slate-50 border-y border-slate-200">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6">
+                <div class="mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Практика и решенные задачи</h2>
+                    <p class="text-slate-600">Примеры внедрений с фокусом на стабильность процессов и бизнес-метрики.</p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Кейс 1 -->
+                    <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-brand-600">Интеграция GetCourse + CRM</span>
+                            <span class="text-xs text-slate-500">Стек: GetCourse, Webhooks, Bitrix24</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Устранение потерь заявок и ускорение обработки заказов отделом продаж</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                            <div>
+                                <p class="font-semibold text-slate-900 mb-1">Задача</p>
+                                <p class="text-slate-600">Менеджеры узнавали о новых неоплаченных заказах в GetCourse с задержкой, часть заявок с вебинаров терялась при ручном переносе в CRM.</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900 mb-1">Решение</p>
+                                <p class="text-slate-600">Настроил автоматическую передачу вебхуков при создании и смене статуса заказа, привязал UTM-метки и мгновенные уведомления менеджеру.</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900 mb-1">Результат</p>
+                                <p class="text-slate-700 font-medium">Время реакции на заявку сократилось с 20 минут до 15 секунд, 100% заказов попадают в CRM без ручного труда.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кейс 2 -->
+                    <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-brand-600">Техническая сборка запуска</span>
+                            <span class="text-xs text-slate-500">Стек: GetCourse, Платежные модули, Telegram</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Подготовка инфраструктуры онлайн-школы к потоковому запуску</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                            <div>
+                                <p class="font-semibold text-slate-900 mb-1">Задача</p>
+                                <p class="text-slate-600">Собрать техническую часть для курса на 3 тарифа с рассрочками, закрытым чатом и поэтапным открытием модулей.</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900 mb-1">Решение</p>
+                                <p class="text-slate-600">Выстроил архитектуру тренингов, настроил процессы выдачи доступов, подключил платежный шлюз и автоматическое добавление учеников в чат после оплаты.</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900 mb-1">Результат</p>
+                                <p class="text-slate-700 font-medium">Запуск прошел без технических сбоев и накладок с доступами; поддержка освободилась от ручной проверки чеков.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форматы работы -->
+        <section id="formats" class="py-16 sm:py-20 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6">
+                <div class="mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Форматы сотрудничества</h2>
+                    <p class="text-slate-600">Работаю официально как ИП (НПД), по договору с предоставлением закрывающих документов.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Технический аудит</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                                Проверка текущих настроек GetCourse, платежей, процессов и интеграций. Нахожу точки потери конверсии и даю пошаговый план исправлений.
+                            </p>
+                        </div>
+                        <span class="text-xs font-semibold text-brand-600">Срок: 1–2 дня</span>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Проектная задача / Запуск</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                                Настройка воронки, интеграция с CRM, разработка Telegram-бота или техническая сборка нового продукта под ключ по согласованному ТЗ.
+                            </p>
+                        </div>
+                        <span class="text-xs font-semibold text-brand-600">Фиксированная смета</span>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Техсопровождение</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                                Регулярная поддержка проекта: оперативные правки процессов, контроль работы интеграций, масштабирование и внедрение новых инструментов.
+                            </p>
+                        </div>
+                        <span class="text-xs font-semibold text-brand-600">Помесячно</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал (Футер) -->
+    <footer class="bg-slate-900 text-slate-300 py-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div>
+                <p class="text-white font-bold text-lg mb-1">Алексей Ханипов</p>
+                <p class="text-sm text-slate-400">Технический специалист GetCourse • Интеграции и автоматизация</p>
+                <p class="text-xs text-slate-500 mt-3">ИП Ханипов Алексей (НПД)</p>
+            </div>
+            
+            <div class="flex flex-col sm:items-end gap-2 text-sm">
+                <a href="https://vk.ru/club236094237" target="_blank" class="text-white hover:text-brand-400 font-medium transition">
+                    Сообщество ВКонтакте: vk.ru/club236094237
+                </a>
+                <a href="mailto:investleon@yandex.ru" class="text-slate-400 hover:text-white transition">
+                    Email: investleon@yandex.ru
+                </a>
+                <a href="https://github.com/alex-hash986" target="_blank" class="text-slate-400 hover:text-white transition">
+                    GitHub: github.com/alex-hash986
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
